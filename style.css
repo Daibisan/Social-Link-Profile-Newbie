@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+html,
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+}
+
+/* dry */
+.column-center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*  */
+
+#wrapper {
+  width: 270px;
+  padding: 2.1rem 2rem;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 10px;
+  gap: 1.3rem;
+}
+
+#upper-content {
+  width: 100%;
+  gap: 1.5rem;
+}
+#upper-content p,
+h1,
+h2 {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+#upper-content img {
+  border-radius: 360px;
+}
+#upper-content p {
+  color: #d1d1d1;
+}
+
+#username {
+  gap: 0.7rem;
+}
+#username h1 {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+#username h2 {
+  font-weight: 700;
+  color: #abcb43;
+}
+#username h2,
+p {
+  font-size: 0.7rem;
+}
+
+#myCareer {
+  color: rgb(203, 255, 125);
+  user-select: none;
+}
+
+#button-list {
+  width: 100%;
+  gap: 0.8rem;
+}
+#button-list button {
+  width: 100%;
+  padding-block: 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: hsl(0, 0%, 20%);
+  color: #fcfcfc;
+  border: 0 solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+
+} #button-list button:active {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+
+@media only screen and (max-width: 1440px) {
+  #wrapper {
+    width: 270px;
+    padding: 2.1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #wrapper {
+    width: 255px;
+    padding: 1.5rem 1.4rem;
+  }
+}
